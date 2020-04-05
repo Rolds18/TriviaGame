@@ -7,53 +7,53 @@ $(document).on('click','#end',function(){
 })
 
 
-
 var questions =[{ 
-    question:"what was the first full-length CGI movie?",
-    answers:["A Bug's Life","Monster Inc.","Toy Story", "The Lion King"],
-    correctAnswer: "Toy Story",
+  
+  question:"Which country has beaver as the national emblem?",
+  answers:["Turkey","Peru","Canada", "Russia"],
+  correctAnswer: "Canada",
 
 }, {
-  question:"what was the first full-length CGI movie?",
+  question:"Which is the hottest planet?",
+  answers:["Venus","Mercury","Saturn", "Jupiter"],
+  correctAnswer: "Venus",
+
+}, {
+  question:"What are the tallest trees on Earth?",
+  answers:["Coast Redwood","Coast Douglas Fir","Giant Sequoia", "Sitka Spruce"],
+  correctAnswer: "The Coast Redwood",
+
+}, {
+  question:"Which war caused the greatest loss of life for Americans?",
+  answers:["WW1","WW2","Vietnam", "The Civil War"],
+  correctAnswer: "The Civil War",
+
+}, {
+  question:"Which country employed the first police woman?",
+  answers:["England","USA","France", "Australia"],
+  correctAnswer: "USA",
+
+}, {
+  question:"What was the first full-length CGI movie?",
   answers:["A Bug's Life","Monster Inc.","Toy Story", "The Lion King"],
   correctAnswer: "Toy Story",
 
 }, {
-  question:"what was the first full-length CGI movie?",
-  answers:["A Bug's Life","Monster Inc.","Toy Story", "The Lion King"],
-  correctAnswer: "Toy Story",
+  question:"What is the world’s most venomous fish?",
+  answers:["Scorpion Fish","Lion Fish","Stonefish", "Toadfish"],
+  correctAnswer: "Stonefish",
 
 }, {
-  question:"what was the first full-length CGI movie?",
-  answers:["A Bug's Life","Monster Inc.","Toy Story", "The Lion King"],
-  correctAnswer: "Toy Story",
-
-}, {
-  question:"what was the first full-length CGI movie?",
-  answers:["A Bug's Life","Monster Inc.","Toy Story", "The Lion King"],
-  correctAnswer: "Toy Story",
-
-}, {
-  question:"what was the first full-length CGI movie?",
-  answers:["A Bug's Life","Monster Inc.","Toy Story", "The Lion King"],
-  correctAnswer: "Toy Story",
-
-}, {
-  question:"what was the first full-length CGI movie?",
-  answers:["A Bug's Life","Monster Inc.","Toy Story", "The Lion King"],
-  correctAnswer: "Toy Story",
-
-}, {
-  question:"what was the first full-length CGI movie?", 
-  answers:["A Bug's Life","Monster Inc.","Toy Story", "The Lion King"],
-  correctAnswer: "Toy Story",
+  question:"What was the name of Robert De Niro’s character in Taxi Driver?", 
+  answers:["Jimmy Bickle","Travis Bickle","Virgil Bickle", "Harry Bickle"],
+  correctAnswer: "Travis Bickle",
 
 }]; 
 
 var game = {
     correct: 0,
     incorrect: 0,
-    counter: 20,
+    counter: 120,
     countdown: function(){
         game.counter--;
         $('#counter').html(game.counter);
@@ -67,7 +67,7 @@ var game = {
         $('#subwrapper').prepend('<h2>Time Remaining: <span id="counter">120</span> Seconds</h2>');
         $('#start').remove();
         for(var i=0; i<questions.length; i++){
-          $('#subwrapper').append('<h2>' +questions[i].question + '</h2>');
+          $('#subwrapper').append('<h2>' + "<font color=lightblue>" +questions[i].question + '</h2>');
           for(var j=0;j<questions[i].answers.length;j++){
                 $("#subwrapper").append("<input type='radio' name='question-"+i+"' value='"+questions[i].answers[j]+ " '>"+questions[i].answers[j])
           }

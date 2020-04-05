@@ -1,0 +1,37 @@
+body {
+  background-image: url(https://i1.wp.com/blog.starsunflowerstudio.com/wp-content/uploads/2010/09/COLOURlovers.com-Teardropstars.png?resize=800%2C514);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#wrapper {
+  font-size: large;
+  background-color: cadetblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  text-align: center;
+  width: 80%;
+  }
+
+  #start {
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    width: 200px;
+    height: 40px;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+  }
+
+  #end {
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    width: 200px;
+    height: 40px;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+  }
